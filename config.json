@@ -1,0 +1,13 @@
+{
+    "browsersync" : {
+        "target" : "<%site-url%>"
+    },
+    "pot" : {
+        "domain" : "<%site-textdomain%>",
+        "package": "<%site-theme-name%>"
+    },
+    "paths" : {
+        "assets_src": "./assets/src",
+        "assets_dist": "./assets/dist"
+    }
+}

@@ -1,0 +1,15 @@
+/* ------------------------------------------------------------ *\
+    Hamburgers
+\* ------------------------------------------------------------ */
+$hamburger-padding-x           : 15px;
+$hamburger-padding-y           : 7px;
+$hamburger-layer-width         : 28px;
+$hamburger-layer-height        : 2px;
+$hamburger-layer-spacing       : 6px;
+$hamburger-layer-color         : #000;
+$hamburger-layer-border-radius : 0;
+$hamburger-hover-opacity       : 1;
+$hamburger-active-layer-color  : #000;
+$hamburger-active-hover-opacity: 1;
+
+@import 'hamburgers/_sass/hamburgers/hamburgers.scss';

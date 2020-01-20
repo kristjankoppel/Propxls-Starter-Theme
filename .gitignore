@@ -1,0 +1,25 @@
+# Define your project specific git ignores here
+# How to use .gitignore: https://help.github.com/articles/ignoring-files
+
+node_modules
+assets/dist
+npm-debug.log
+yarn-error.log
+/vendor
+.vscode
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db

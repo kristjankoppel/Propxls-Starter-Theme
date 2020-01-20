@@ -1,0 +1,26 @@
+{
+  "name": "kristjan07/propxls-wordpress-theme",
+  "description": "Starter theme to build a Wordpress theme",
+  "type": "wordpress-theme",
+  "authors": [
+    {
+      "email": "kristjan@propxls.eu",
+      "name": "Kristjan Koppel"
+    }  
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "timber/timber": "1.*",
+    "soberwp/intervention": "1.2.0-p",
+    "hellonico/timber-dump-extension": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {"Propxls\\": "propxls/lib/"}
+  }
+
+}

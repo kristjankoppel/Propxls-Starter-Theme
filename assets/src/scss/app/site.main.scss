@@ -1,0 +1,12 @@
+body {
+    color: $secondary; 
+}
+.site-main {
+    padding: 40px 0;
+    @include media-breakpoint-up(md) {
+        padding: 56px 0;
+    }
+    @include media-breakpoint-up(xl) {
+        padding: 72px 0;
+    }
+}

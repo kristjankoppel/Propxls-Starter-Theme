@@ -1,0 +1,310 @@
+/* stylelint-disable */
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px; 
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* ------------------------------------------------------------ *\
+    Comments
+\* ------------------------------------------------------------ */
+
+.section-comments {
+    padding-top: 15px;
+  
+    a {
+      text-decoration: none;
+    }
+  
+    p {
+      padding-bottom: 18.2px;
+    }
+  
+    ol,
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none outside none;
+    }
+  
+  
+    h3 {
+      position: relative;
+      padding: 0 0 10px;
+  
+      small {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  
+  .comments {
+    position: relative;
+  
+    .children {
+      position: relative;
+      padding-left: 70px;
+  
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+      }
+  
+      &:before {
+        top: 33px;
+        left: 23px;
+        width: 32px;
+        height: 27px;
+        border-left: 8px solid #c3c3c3;
+        border-bottom: 8px solid #c3c3c3;
+      }
+  
+      &:after {
+        top: -5px;
+        left: 8px;
+        border: 20px solid transparent;
+        border-width: 20px 19px;
+        border-bottom-color: #c3c3c3;
+      }
+    }
+  }
+  
+  .comment {
+    position: relative;
+    padding: 30px 0 30px 65px;
+  
+    .avatar {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+    }
+  
+    &__says {
+      padding-left: 5px;
+    }
+  
+    &__moderation-notice {
+      display: inline-block;
+      margin: 3px 0 8px;
+      color: #999;
+    }
+  
+    &__meta {
+      padding-bottom: 12px;
+  
+      a {
+        color: #363636;
+      }
+    }
+  
+    &__text {
+      p:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+  
+    &__reply {
+      padding-top: 10px;
+      text-align: right;
+  
+      a {
+        display: inline-block;
+        padding: 5px 10px;
+        background: #363636;
+        color: #fff;
+  
+        &:hover {
+          text-decoration: none;
+          opacity: .8;
+        }
+      }
+    }
+  }
+  
+  .comment-respond {
+    width: 100%;
+    padding-top: 30px;
+    border-top: 1px solid #363636;
+  
+    h3 {
+      position: relative;
+    }
+  
+    small {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  
+    label {
+      display: block;
+      padding-bottom: 4px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    textarea {
+      display: block;
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #f7f7f7;
+    }
+  
+    textarea {
+      width: 100%;
+      height: 100px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="url"] {
+      &:focus {
+        background-color: #fff;
+      }
+  
+      &::placeholder {
+        color: #777;
+      }
+    }
+  
+    .required {
+      color: #e40000;
+    }
+  
+    .comment-notes {
+      padding-top: 15px;
+    }
+  
+    .form-submit input {
+      display: block;
+      width: 160px;
+      height: 40px;
+      border: 0;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      background: #363636;
+      cursor: pointer;
+    }
+  }
+  
+  .no-comments {
+    padding-top: 12px;
+    font-weight: bold;
+    font-size: 18px;
+  }
